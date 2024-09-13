@@ -15,6 +15,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\EmployeeRegistry.Contracts\EmployeeRegistry.Contracts.csproj" />
+      <ProjectReference Include="..\EmployeeRegistry.Domain\EmployeeRegistry.Domain.csproj" />
     </ItemGroup>
 
 </Project>

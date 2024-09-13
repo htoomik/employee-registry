@@ -1,10 +1,14 @@
 using EmployeeRegistry.Contracts;
+using EmployeeRegistry.Domain;
 using EmployeeRegistry.EndpointHandlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddSingleton<IEmployeeStore, EmployeeStore>();
+builder.Services.AddTransient<EmployeeHandler>();
 
 var app = builder.Build();
 
@@ -16,7 +20,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var handler = new EmployeeHandler();
+var handler = app.Services.GetRequiredService<EmployeeHandler>();
 
 app.MapGet("/employees", () => handler.Get())
     .WithName("GetEmployees")
