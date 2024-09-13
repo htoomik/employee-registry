@@ -1,4 +1,5 @@
 using EmployeeRegistry.Domain.Commands;
+using EmployeeRegistry.Domain.Persistence;
 
 namespace EmployeeRegistry.Domain.CommandHandlers;
 

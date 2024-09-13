@@ -1,4 +1,6 @@
-namespace EmployeeRegistry.Domain;
+using EmployeeRegistry.Domain.Entities;
+
+namespace EmployeeRegistry.Domain.Persistence;
 
 public interface IEmployeeStore
 {

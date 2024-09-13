@@ -1,6 +1,6 @@
-using EmployeeRegistry.Contracts;
-using EmployeeRegistry.Domain;
+using EmployeeRegistry.Contracts.Requests;
 using EmployeeRegistry.Domain.CommandHandlers;
+using EmployeeRegistry.Domain.Persistence;
 using EmployeeRegistry.Domain.QueryHandlers;
 using EmployeeRegistry.EndpointHandlers;
 

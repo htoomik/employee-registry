@@ -1,6 +1,7 @@
 using System.Collections.Concurrent;
+using EmployeeRegistry.Domain.Entities;
 
-namespace EmployeeRegistry.Domain;
+namespace EmployeeRegistry.Domain.Persistence;
 
 public class EmployeeStore : IEmployeeStore
 {

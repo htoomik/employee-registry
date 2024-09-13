@@ -1,4 +1,6 @@
-using EmployeeRegistry.Contracts;
+using EmployeeRegistry.Contracts.Responses;
+using EmployeeRegistry.Domain.Entities;
+using EmployeeRegistry.Domain.Persistence;
 
 namespace EmployeeRegistry.Domain.QueryHandlers;
 

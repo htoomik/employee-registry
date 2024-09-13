@@ -1,4 +1,5 @@
-using EmployeeRegistry.Contracts;
+using EmployeeRegistry.Contracts.Requests;
+using EmployeeRegistry.Contracts.Responses;
 using EmployeeRegistry.Domain.CommandHandlers;
 using EmployeeRegistry.Domain.Commands;
 using EmployeeRegistry.Domain.QueryHandlers;
