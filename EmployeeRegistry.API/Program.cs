@@ -1,5 +1,7 @@
 using EmployeeRegistry.Contracts;
 using EmployeeRegistry.Domain;
+using EmployeeRegistry.Domain.CommandHandlers;
+using EmployeeRegistry.Domain.QueryHandlers;
 using EmployeeRegistry.EndpointHandlers;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IEmployeeStore, EmployeeStore>();
 builder.Services.AddTransient<EmployeeHandler>();
+builder.Services.AddTransient<CreateEmployeeCommandHandler>();
+builder.Services.AddTransient<DeleteEmployeeCommandHandler>();
+builder.Services.AddTransient<EmployeesQueryHandler>();
 
 var app = builder.Build();
 

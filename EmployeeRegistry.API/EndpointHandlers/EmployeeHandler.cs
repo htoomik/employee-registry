@@ -1,17 +1,18 @@
 using EmployeeRegistry.Contracts;
-using EmployeeRegistry.Domain;
+using EmployeeRegistry.Domain.CommandHandlers;
 using EmployeeRegistry.Domain.Commands;
+using EmployeeRegistry.Domain.QueryHandlers;
 
 namespace EmployeeRegistry.EndpointHandlers;
 
-public class EmployeeHandler(IEmployeeStore store)
+public class EmployeeHandler(
+    CreateEmployeeCommandHandler createEmployeeCommandHandler,
+    DeleteEmployeeCommandHandler deleteEmployeeCommandHandler,
+    EmployeesQueryHandler employeesQueryHandler)
 {
     public async Task<PagedResult<EmployeeDto>> Get()
     {
-        var data = store
-            .GetAll()
-            .Select(MapToEmployeeDto)
-            .ToList();
+        var data = await employeesQueryHandler.Handle();
         var result = new PagedResult<EmployeeDto>(data);
         return result;
     }
@@ -19,17 +20,13 @@ public class EmployeeHandler(IEmployeeStore store)
     public async Task<Guid> Post(CreateEmployeeRequest request)
     {
         var command = new CreateEmployeeCommand(request.Email, request.FirstName, request.LastName);
-        var id = store.Add(command);
+        var id = await createEmployeeCommandHandler.Handle(command);
         return id;
     }
 
     public async Task Delete(Guid id)
     {
-        store.Delete(id);
-    }
-
-    private static EmployeeDto MapToEmployeeDto(Employee e)
-    {
-        return new EmployeeDto(e.Id, e.Email, e.FirstName, e.LastName);
+        var command = new DeleteEmployeeCommand(id);
+        await deleteEmployeeCommandHandler.Handle(command);
     }
 }
