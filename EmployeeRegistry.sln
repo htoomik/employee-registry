@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeRegistry.API", "EmployeeRegistry.API\EmployeeRegistry.API.csproj", "{14B9F753-6922-4A29-A5AC-54739570BDBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeRegistry.Domain", "EmployeeRegistry.Domain\EmployeeRegistry.Domain.csproj", "{383B9A57-C53B-440C-89C0-F1A681F79047}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeRegistry.Contracts", "EmployeeRegistry.Contracts\EmployeeRegistry.Contracts.csproj", "{73F01A19-32F5-46D3-9283-88AA16479069}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14B9F753-6922-4A29-A5AC-54739570BDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B9F753-6922-4A29-A5AC-54739570BDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B9F753-6922-4A29-A5AC-54739570BDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B9F753-6922-4A29-A5AC-54739570BDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383B9A57-C53B-440C-89C0-F1A681F79047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383B9A57-C53B-440C-89C0-F1A681F79047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383B9A57-C53B-440C-89C0-F1A681F79047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383B9A57-C53B-440C-89C0-F1A681F79047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F01A19-32F5-46D3-9283-88AA16479069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F01A19-32F5-46D3-9283-88AA16479069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F01A19-32F5-46D3-9283-88AA16479069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F01A19-32F5-46D3-9283-88AA16479069}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
