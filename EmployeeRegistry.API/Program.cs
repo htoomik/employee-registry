@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IEmployeeStore, EmployeeStore>();
-builder.Services.AddTransient<EmployeeHandler>();
+builder.Services.AddTransient<EmployeeRouteHandler>();
 builder.Services.AddTransient<CreateEmployeeCommandHandler>();
 builder.Services.AddTransient<DeleteEmployeeCommandHandler>();
 builder.Services.AddTransient<EmployeesQueryHandler>();
@@ -25,7 +25,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var handler = app.Services.GetRequiredService<EmployeeHandler>();
+var handler = app.Services.GetRequiredService<EmployeeRouteHandler>();
 
 app.MapGet("/employees", () => handler.Get())
     .WithName("GetEmployees")

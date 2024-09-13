@@ -5,7 +5,7 @@ using EmployeeRegistry.Domain.QueryHandlers;
 
 namespace EmployeeRegistry.EndpointHandlers;
 
-public class EmployeeHandler(
+public class EmployeeRouteHandler(
     CreateEmployeeCommandHandler createEmployeeCommandHandler,
     DeleteEmployeeCommandHandler deleteEmployeeCommandHandler,
     EmployeesQueryHandler employeesQueryHandler)
