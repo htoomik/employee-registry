@@ -27,6 +27,8 @@ In a production project the following would need to be added/improved:
 
 - Proper email validation
 - Suitable libraries for validation, unit test assertions, etc 
+- More granular error handling, differentiating between client vs server errors
+- Proper logging
 
 ## Try it out
 
