@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{73896D7B-6
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeRegistry.Test", "EmployeeRegistry.Test\EmployeeRegistry.Test.csproj", "{ECEE2BF3-4C1E-4677-9C60-1572420924A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,5 +31,9 @@ Global
 		{73F01A19-32F5-46D3-9283-88AA16479069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73F01A19-32F5-46D3-9283-88AA16479069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73F01A19-32F5-46D3-9283-88AA16479069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEE2BF3-4C1E-4677-9C60-1572420924A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEE2BF3-4C1E-4677-9C60-1572420924A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEE2BF3-4C1E-4677-9C60-1572420924A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEE2BF3-4C1E-4677-9C60-1572420924A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

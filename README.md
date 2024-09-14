@@ -18,7 +18,3 @@ This project is a miniature REST API for an employee registry.
 
 1. Run the application in your favourite IDE or using `dotnet run` from the `EmployeeRegistry.API` folder
 2. Go to http://localhost:5000/swagger/index.html to see details for the endpoints and try them out
-
-## TODO
-
-- [ ] Tests ~~~~
