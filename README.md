@@ -24,19 +24,19 @@ Under the hood:
 1. Run the application in your favourite IDE or using `dotnet run` from the `EmployeeRegistry.API` folder
 2. Go to http://localhost:5000/swagger/index.html to see details for the endpoints and try them out
 
-## Design principles
+## Design principles & goals
 
 - Aiming at something that could be used as a basic template project for e.g. a microservice.
-- Decoupling data types where decoupling will definitely be needed sooner or later, and will be painful to introduce if left too late
-  - For example, objects exposed by the API need to be separate from database entities 
-- Command/query pattern
-- A minimum of external libraries ("manual" mapping instead of e.g. AutoMapper; no MediatR dispatching commands)
+- Decoupling data types where decoupling will definitely be needed sooner or later, and will be painful to introduce if left too late. For example, objects exposed by the API need to be separate from database entities 
+- Command/query pattern.
+- A minimum of external libraries ("manual" mapping instead of e.g. AutoMapper; no MediatR dispatching commands).
 
-## Shortcuts taken
+## Scope
 
-In a production project the following would need to be added/improved:
+Out of scope for this implementation:
 
+- Proper persistence
 - Proper email validation
+- Proper logging
 - Suitable libraries for validation, unit test assertions, etc 
 - More granular error handling, differentiating between client vs server errors
-- Proper logging
