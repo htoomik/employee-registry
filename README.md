@@ -13,6 +13,17 @@ Under the hood:
 - Data validation
 - Thread-safe data storage
 
+## Try it out
+
+### Prerequisites
+
+- Install .NET 8
+
+### Run the application
+
+1. Run the application in your favourite IDE or using `dotnet run` from the `EmployeeRegistry.API` folder
+2. Go to http://localhost:5000/swagger/index.html to see details for the endpoints and try them out
+
 ## Design principles
 
 - Aiming at something that could be used as a basic template project for e.g. a microservice.
@@ -29,14 +40,3 @@ In a production project the following would need to be added/improved:
 - Suitable libraries for validation, unit test assertions, etc 
 - More granular error handling, differentiating between client vs server errors
 - Proper logging
-
-## Try it out
-
-### Prerequisites
-
-- Install .NET 8
-
-### Run the application
-
-1. Run the application in your favourite IDE or using `dotnet run` from the `EmployeeRegistry.API` folder
-2. Go to http://localhost:5000/swagger/index.html to see details for the endpoints and try them out
